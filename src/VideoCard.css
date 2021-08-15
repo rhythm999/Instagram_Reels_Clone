@@ -1,0 +1,92 @@
+.like,.comment,.share{
+    position: absolute;
+    right:3rem;
+    font-size: 3rem;
+    border: 1px solid red;
+
+}
+.like{
+    bottom: 15rem;
+    color: red;
+}
+.comment{
+    bottom: 9rem;
+    color: white;
+}
+.share{
+    bottom: 3rem;
+    color: white;
+}
+.video-card{
+    height: 100%;
+    border: 1px solid;
+    width: 40%;
+    scroll-snap-align: start;
+    position: relative;
+    margin: auto;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.animate{
+    animation: zoomOut 2s ease-out ;
+}
+@keyframes zoomOut{
+    0%{
+        font-size: 3.2rem;
+    }
+    20%{
+        bottom: 25rem;
+        right: 10rem;
+        font-size: 5rem;
+        opacity: 0.8;
+    }
+    50%{
+        bottom: 35rem;
+        right: 12rem;
+        font-size: 6rem;
+        opacity:0.6;
+    }
+    100%{
+        bottom: 35rem;
+        right: 15rem;
+        font-size: 10rem;
+        opacity:0.4;
+    }
+
+}
+
+.name,.music,.description{
+    position: absolute;
+    bottom: 10rem;
+    height: 1rem;
+    width: 15rem;
+    left: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-left: 0.5rem;
+    font-size: 23px;
+    text-shadow: none;
+}
+.music{
+    bottom: 10rem;
+    display: flex;
+    font-size: larger;
+}
+.music-logo{
+    height: 100%;
+    width: 10%;
+    color: white;
+}
+.music-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 30rem;
+    height: 5rem;
+    bottom: 3rem;
+}

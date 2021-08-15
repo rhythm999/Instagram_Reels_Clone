@@ -1,0 +1,16 @@
+.upload_container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #34a3a1;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #34a3a1 40px ), repeating-linear-gradient( #edeef355, #edeef3 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload_modal{
+    height: 40vh;
+    width: 40vw;
+    background-color: white;
+}
