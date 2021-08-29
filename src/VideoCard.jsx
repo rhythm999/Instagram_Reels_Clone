@@ -33,12 +33,12 @@ let VideoCard = (props) => {
             }} >favorite_border</span>
             <span class="material-icons comment">chat</span>
             <span class="material-icons share">share</span>
-            <p className="name">@ ${props.details.username}</p>
+            <span className="name">@ {props.details.username}</span>
             <span className="music">
                 <span class="material-icons music-logo">audiotrack</span>
-                <marquee className="music-name">${props.details.song}</marquee>
+                <marquee className="music-name">{props.details.song}</marquee>
             </span>
-            <p className="description"> ${props.details.Description}</p>
+            <p className="description"> {props.details.Description}</p>
         </div>
     )
 }

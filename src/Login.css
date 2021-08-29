@@ -6,6 +6,7 @@
     width: 42rem;
     padding: 2rem;
     border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 17px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
 }
 .btn{
     margin-left: 1rem;
@@ -13,9 +14,8 @@
 .row{
     height: 100vh;
     width: 100vw;
-    background-color: #34a3a1;
+    background-color: #00a8ff;
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #34a3a1 40px ), repeating-linear-gradient( #edeef355, #edeef3 );
 
 }
 .col-4{
@@ -30,16 +30,16 @@
 .img2{
     height: 24rem;
 }
-.name{
+.Appname{
     height: 8rem;
-    width: 47vw;
+    width: 103vw;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 16rem;
     position: fixed;
-    top: 47rem;
-    left: 31rem;
-    color: #b9ea43;
-    text-shadow: 5px 4px white;
+    top: -5rem;
+    left: 9.5rem;
+    color: #9AECDB;
+    text-shadow: 5px 15px white;
 }
 
 .google_Login{
@@ -52,19 +52,24 @@
 }
 .logout_btn{
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    left: 4.3rem;
+    bottom: 2rem;
     font-size: 3rem;
+    color: green;
 }
 .upload_btn{
     position: absolute;
-    font-size: 3rem;
-    bottom: 2rem;
-    right: 2rem;
+    font-size: 3.5rem;
+    bottom: 7rem;
+    left: 4rem;
 }
 .detailContainer{
     position: absolute;
     display: flex;
+    border: 1px solid;
+    height: 100%;
+    width: 13rem;
+    background-color: #353b48;
 }
 .profile_btn{
     height: 10rem;
@@ -77,6 +82,7 @@
     position: absolute;
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
+    background-color: #00a8ff;
 }
 
 .greenDot{
@@ -85,20 +91,45 @@
     position: absolute;
     border-radius: 50%;
     background-color: #b9ea43;
-    top: 2rem;
+    top: 12rem;
     left: 1rem;
 }
 
 .personal_cont{
     font-size: 1rem;
     position: absolute;
-    top: 1.6rem;
+    top: 11.67rem;
     left: 3rem;
     width: 11rem;
     font-weight: bold;
+    color: white;
+
+}
+.Avatar{
+    height: 10rem;
+    width: 10rem;
+    background-color: white;
+    margin: auto;
+    border-radius: 30%;
+}
+.poster{
+    height: 14rem;
+    width: 52rem;
+    background-color: #00a8ff;
+    position: absolute;
+    top: 22rem;
+    right: -9rem;
+    transform: rotate(90deg);
 }
 
 
+.posterLogin{
+    height: 14rem;
+    width: 84rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 18rem;
+}
 
 
 

@@ -41,6 +41,7 @@ let Home = () => {
                             <div className="detailContainer">
                                 <div className="greenDot"></div>
                                 <div className="personal_cont"> {value.displayName}</div>
+                                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvR2EmeDnAttbXXbBr_HtCX1qjGmUoSlP1_Q&usqp=CAU" className="Avatar"></img>
                             </div>
                             <div className="profile_btn"></div>
                             <span class="material-icons logout_btn" onClick={() => {
@@ -49,6 +50,7 @@ let Home = () => {
                             <Link to="/upload">
                                 <span class="material-icons upload_btn">upload</span>
                             </Link>
+                            <img src="https://cdn.pixabay.com/photo/2017/07/01/13/55/divider-2461548__340.png" className="poster"></img>
                         </>
                     )
                     :

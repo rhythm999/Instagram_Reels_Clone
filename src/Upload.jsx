@@ -85,10 +85,10 @@ let Upload = () => {
 
                             uploadtask.on("state_changed", f1, f2, f3);
                             setUploadind(true);
-                        }}></input>
-
-                    
+                        }}></input>                    
                 </form>
+                <img className="uploadPoster" src="https://cdn.pixabay.com/photo/2017/01/31/17/08/arms-2025624_960_720.png"></img>
+                <img className="uploadPosterr" src="https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_960_720.jpg"></img>
             </div>
         </div>)
     )

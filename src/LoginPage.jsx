@@ -44,8 +44,10 @@ let LoginPage = () => {
                             <div className="col-4">
                                 <img className="img2" src="https://cdn.pixabay.com/photo/2021/07/08/07/23/child-6396103_960_720.png"></img>
                             </div>
+                            <img src="https://cdn.pixabay.com/photo/2017/07/01/13/55/divider-2461548__340.png" className="posterLogin"></img>
+                           
                         </div>
-                        <div className="name">Welcome To Reel World</div>
+                        <div className="Appname">SPOOL IT UP!</div>
                     </div>
                 )
             }

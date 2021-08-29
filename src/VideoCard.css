@@ -1,34 +1,35 @@
 .like,.comment,.share{
     position: absolute;
-    right:3rem;
-    font-size: 3rem;
-    border: 1px solid red;
-
+    font-size: 2rem;
+    bottom: 16rem;
 }
 .like{
-    bottom: 15rem;
     color: red;
+    left: 3rem;
 }
 .comment{
-    bottom: 9rem;
     color: white;
+    left:8rem
 }
 .share{
-    bottom: 3rem;
+    left: 13rem;
     color: white;
 }
 .video-card{
     height: 100%;
-    border: 1px solid;
     width: 40%;
     scroll-snap-align: start;
     position: relative;
     margin: auto;
+    align-items: center;
+    display: flex;
 }
 video{
-    height: 100%;
+    height: 50%;
     width: 100%;
     object-fit: cover;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 17px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
 }
 .animate{
     animation: zoomOut 2s ease-out ;
@@ -60,7 +61,7 @@ video{
 
 .name,.music,.description{
     position: absolute;
-    bottom: 10rem;
+    bottom: 13rem;
     height: 1rem;
     width: 15rem;
     left: 2rem;
