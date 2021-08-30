@@ -9,12 +9,12 @@ let Home = () => {
 
     let [Posts, setPosts] = useState([]);
     let value = useContext(AuthContext);
+    
 
     useEffect(() => {
         let unsub = firestore.collection("posts").onSnapshot((querySnapshot) => {
             setPosts(
                 querySnapshot.docs.map((doc) => {
-                    console.log(doc.data());
                     return doc.data();
                 })
             )
@@ -40,8 +40,11 @@ let Home = () => {
                             </div>
                             <div className="detailContainer">
                                 <div className="greenDot"></div>
+                                <Link to="/profile">
                                 <div className="personal_cont"> {value.displayName}</div>
+                                </Link>
                                 <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvR2EmeDnAttbXXbBr_HtCX1qjGmUoSlP1_Q&usqp=CAU" className="Avatar"></img>
+                                <div className="logo">SPOOL</div>
                             </div>
                             <div className="profile_btn"></div>
                             <span class="material-icons logout_btn" onClick={() => {

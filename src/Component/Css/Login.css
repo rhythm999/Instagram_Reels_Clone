@@ -91,14 +91,14 @@
     position: absolute;
     border-radius: 50%;
     background-color: #b9ea43;
-    top: 12rem;
+    top: 16rem;
     left: 1rem;
 }
 
 .personal_cont{
     font-size: 1rem;
     position: absolute;
-    top: 11.67rem;
+    top: 15.67rem;
     left: 3rem;
     width: 11rem;
     font-weight: bold;
@@ -129,6 +129,19 @@
     position: absolute;
     bottom: 2rem;
     left: 18rem;
+}
+
+.logo{
+    height: 9rem;
+    width: 18rem;
+    font-weight: bold;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    color: #9AECDB;
+    text-shadow: 4px 2px blueviolet;
+    font-size: 3rem;
+    text-decoration: overline;
 }
 
 

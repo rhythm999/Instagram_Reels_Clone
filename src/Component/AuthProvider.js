@@ -7,7 +7,7 @@ let AuthProvider=({children})=>{
 
     let [currentUser,setcurrentUser]=useState(null);
     let [loading,setloading]=useState(true);
-    console.log(currentUser);
+    
 
     //for authentication details when user logges in using google login
     useEffect(()=>{

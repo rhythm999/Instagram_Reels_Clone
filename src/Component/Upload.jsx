@@ -49,10 +49,7 @@ let Upload = () => {
                                 Descriptoin: DescriptionVid,
                                 Songname: songName,
                             }
-                            console.log(objfile);
                             let f1 = (snapshot) => {
-                                console.log(snapshot.bytesTransferred);
-                                console.log(snapshot.totalBytes);
                                 setTemp(snapshot.bytesTransferred);
                                 setTotal(snapshot.totalBytes);
                             }
@@ -61,18 +58,10 @@ let Upload = () => {
                             }
                             let f3 = () => {
                                 let p = uploadtask.snapshot.ref.getDownloadURL();
-                                console.log(p)
                                 p.then((url) => {
-                                    console.log({
-                                        username: value.displayName,
-                                        Description: DescriptionVid,
-                                        song: songName,
-                                        url: url,
-                                        likes: 0,
-                                        comments: [],
-                                    })
                                     firestore.collection("posts").add({
                                         username: value.displayName,
+                                        uid:value.uid,
                                         Description: DescriptionVid,
                                         song: songName,
                                         url: url,
