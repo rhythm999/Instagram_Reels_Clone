@@ -1,14 +1,14 @@
 import { useState } from "react";
-import LoginPage from "./LoginPage"
+import LoginPage from "./Component/LoginPage"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from './Home'
-import Upload from './Upload'
-import AuthProvider from "./AuthProvider";
+import Home from './Component/Home'
+import Upload from './Component/Upload'
+import AuthProvider from "./Component/AuthProvider";
 
 function App() {
 
-  let [User, setUser] = useState(null);
-  console.log(User);
+  // let [User, setUser] = useState(null);
+  // console.log(User);
 
   return (
     <>
