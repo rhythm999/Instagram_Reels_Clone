@@ -65,7 +65,7 @@ let Upload = () => {
                                         Description: DescriptionVid,
                                         song: songName,
                                         url: url,
-                                        likes: 0,
+                                        likes: [],
                                         comments: [],
                                     })
                                 })

@@ -142,6 +142,15 @@
     text-shadow: 4px 2px blueviolet;
     font-size: 3rem;
     text-decoration: overline;
+    z-index: 3;
+}
+
+.AvatarChange{
+    height: 3rem;
+    width: 9rem;
+    position: absolute;
+    top: 37rem;
+    left: 2rem;
 }
 
 

@@ -1,12 +1,17 @@
-import { useState } from "react";
-
+import { useState, useContext } from "react";
 import './Css/VideoCard.css'
+import { AuthContext } from "./AuthProvider"
+import { firestore } from "../firebase";
 
 let VideoCard = (props) => {
 
+    let value = useContext(AuthContext);
     let [playing, setplaying] = useState(false);
-    let [like, setlike] = useState(false);
     let [comment, setcomment] = useState(false);
+    let [currComment, setcurrComment] = useState("");
+    let like = props.details.likes.includes(value.uid);
+    let like_value = like ? "favorite" : "favorite_border";
+    let totallikes = props.details.likes.length;
 
     return (<div className="mainBocContainer">
         {
@@ -20,11 +25,31 @@ let VideoCard = (props) => {
                                 }}>Back</button>
                             </div>
                             <div className="allCommentSection">
-                                
+                                {props.details.comments.map((e) => {
+                                    return (
+                                        <div className="comments">
+                                            <div className="comments_detail">
+                                                <img src={e.photoURL} className="comment_photo"></img>
+                                                <div className="comments_name">{e.displayName}</div>
+                                            </div>
+                                            <div className="comment_comment"> {e.comment}</div>
+                                        </div>)
+                                })}
                             </div>
                             <div className="newcommentBox">
-                                <input className="newComment" placeholder="   Enter new comment..." />
-                                <span class="material-icons sendbtn">send</span>
+                                <input className="newComment" placeholder="   Enter new comment..." value={currComment} onChange={(e) => {
+                                    setcurrComment(e.currentTarget.value);
+                                }} />
+                                <span class="material-icons sendbtn" onClick={() => {
+                                    firestore.collection("posts").doc(props.details.id).update({
+                                        comments: [...props.details.comments, {
+                                            comment: currComment,
+                                            photoURL: value.photoURL,
+                                            displayName: value.displayName
+                                        }]
+                                    })
+                                    setcurrComment("");
+                                }}>send</span>
                             </div>
                         </div>
                         <span className="name">@ {props.details.username}</span>
@@ -48,20 +73,37 @@ let VideoCard = (props) => {
                             e.currentTarget.pause();
                         }
                     }} ></video>
+
+                    <div className="number_likes">{totallikes}</div>
+
+
                     <span class="material-icons  like" onClick={(e) => {
                         if (like) {
-                            setlike(false);
+                            let alllikes = props.details.likes;
+                            alllikes = alllikes.filter((e) => {
+                                return e != value.uid;
+                            })
+                            firestore.collection("posts").doc(props.details.id).update({
+                                likes: alllikes
+                            })
+                            console.log(props.details.likes.includes(value.uid))
+                            like = false;
                             e.currentTarget.classList.remove("animate");
-                            e.currentTarget.innerText = "favorite_border";
+
                         }
                         else {
-                            setlike(true);
+                            firestore.collection("posts").doc(props.details.id).update({
+                                likes: [...props.details.likes, value.uid]
+                            })
+                            like = true;
                             e.currentTarget.classList.add("animate");
-                            e.currentTarget.innerText = "favorite";
+
                         }
-                    }} >favorite_border</span>
+                    }} >{like_value}</span>
+
                     <span class="material-icons comment" onClick={() => {
                         setcomment(true);
+
                     }}>chat</span>
                     <span class="material-icons share">share</span>
                     <span className="name">@ {props.details.username}</span>

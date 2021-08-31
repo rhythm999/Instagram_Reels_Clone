@@ -9,16 +9,24 @@
     font-size: 2rem;
     bottom: 16rem;
 }
+.number_likes{
+    font-weight: bold;
+    left: 3rem;
+    position: absolute;
+    top: 42.2rem;
+    font-size: 1.8rem;
+    color: blue;
+}
 .like{
     color: red;
-    left: 3rem;
+    left: 5rem;
 }
 .comment{
     color: white;
     left:8rem
 }
 .share{
-    left: 13rem;
+    right: 3rem;
     color: white;
 }
 .video-card{
@@ -112,6 +120,7 @@ video{
     top: 16.5rem;
     border-radius: 0.5rem;
     box-shadow: 0px 4px 7px 0px black;
+    z-index: 3;
 }
 
 .newcommentBox{
@@ -141,10 +150,42 @@ video{
     font-size: 2.5rem;
 }
 .allCommentSection{
-    height: 22.3rem;
+    height: 26.3rem;
     width: 100%;
     position: absolute;
-    top: 19.2rem;
+    top: 15.2rem;
     border-radius: 2rem;
-    border: 1px solid;
+    overflow: scroll;
+}
+.allCommentSection::-webkit-scrollbar{
+    display: none;
+}
+
+.comment_photo{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.comments{
+    height: 5rem;
+    margin-top: 0.5rem;
+}
+.comments_detail{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.comments_name{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.comment_comment{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
 }
