@@ -4,6 +4,7 @@ import Home from './Component/Home'
 import Upload from './Component/Upload'
 import AuthProvider from "./Component/AuthProvider";
 import Profile from "./Component/Profile"
+import Private from "./Component/Private";
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       <Router>
         <AuthProvider>
           <Switch>
+          <Route path="/private/:name/:pid">
+              <Private  />
+            </Route>
           <Route path="/profile">
               <Profile  />
             </Route>

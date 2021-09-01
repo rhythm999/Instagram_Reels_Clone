@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { signInWithGoogle } from '../firebase';
 import './Css/Login.css'
 import { Redirect } from "react-router-dom";
@@ -21,7 +21,7 @@ let LoginPage = () => {
                     <div className="my_Page">
                         <div className="row">
                             <div className="col-4">
-                                <img className="img1" src="https://cdn.pixabay.com/photo/2019/02/18/20/02/face-4005302_1280.png"></img>
+                                <img alt="Loading Failed" className="img1" src="https://cdn.pixabay.com/photo/2019/02/18/20/02/face-4005302_1280.png"></img>
                             </div>
                             <div className="col-4 main">
                                 <div className="LoginBox">
@@ -42,9 +42,9 @@ let LoginPage = () => {
                             </div>
                             <button onClick={signInWithGoogle} className="google_Login btn-primary" >Login With Google</button>
                             <div className="col-4">
-                                <img className="img2" src="https://cdn.pixabay.com/photo/2021/07/08/07/23/child-6396103_960_720.png"></img>
+                                <img className="img2" alt="Loading Failed" src="https://cdn.pixabay.com/photo/2021/07/08/07/23/child-6396103_960_720.png"></img>
                             </div>
-                            <img src="https://cdn.pixabay.com/photo/2017/07/01/13/55/divider-2461548__340.png" className="posterLogin"></img>
+                            <img alt="Loading Failed" src="https://cdn.pixabay.com/photo/2017/07/01/13/55/divider-2461548__340.png" className="posterLogin"></img>
                            
                         </div>
                         <div className="Appname">SPOOL IT UP!</div>

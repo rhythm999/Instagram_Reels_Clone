@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import './Css/VideoCard.css'
 import { AuthContext } from "./AuthProvider"
 import { firestore } from "../firebase";
+import { Link } from "react-router-dom";
 
 let VideoCard = (props) => {
 
@@ -29,7 +30,7 @@ let VideoCard = (props) => {
                                     return (
                                         <div className="comments">
                                             <div className="comments_detail">
-                                                <img src={e.photoURL} className="comment_photo"></img>
+                                                <img src={e.photoURL} className="comment_photo" alt="Loading Failed"></img>
                                                 <div className="comments_name">{e.displayName}</div>
                                             </div>
                                             <div className="comment_comment"> {e.comment}</div>
@@ -81,7 +82,7 @@ let VideoCard = (props) => {
                         if (like) {
                             let alllikes = props.details.likes;
                             alllikes = alllikes.filter((e) => {
-                                return e != value.uid;
+                                return e !== value.uid;
                             })
                             firestore.collection("posts").doc(props.details.id).update({
                                 likes: alllikes
@@ -106,7 +107,10 @@ let VideoCard = (props) => {
 
                     }}>chat</span>
                     <span class="material-icons share">share</span>
-                    <span className="name">@ {props.details.username}</span>
+                    <Link to={`/private/${props.details.username}/${props.details.uid}`}>
+                        <span className="name">@ {props.details.username}</span>
+                    </Link>
+
                     <span className="music">
                         <span class="material-icons music-logo">audiotrack</span>
                         <marquee className="music-name">{props.details.song}</marquee>

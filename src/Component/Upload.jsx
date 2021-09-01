@@ -4,7 +4,7 @@ import { storage, firestore } from '../firebase';
 import './Css/Upload.css'
 
 import { AuthContext } from "./AuthProvider"
-import { Link, Redirect } from 'react-router-dom';
+import {  Redirect } from 'react-router-dom';
 
 let Upload = () => {
 
@@ -17,7 +17,7 @@ let Upload = () => {
    let [total,setTotal]=useState(0);
 
     return (
-        temp==total && total>0?(<Redirect to="/home"></Redirect>):
+        temp===total && total>0?(<Redirect to="/home"></Redirect>):
         (<div className="upload_container">
             <div className="upload_modal">
                 <form class="p-4">
@@ -76,8 +76,8 @@ let Upload = () => {
                             setUploadind(true);
                         }}></input>                    
                 </form>
-                <img className="uploadPoster" src="https://cdn.pixabay.com/photo/2017/01/31/17/08/arms-2025624_960_720.png"></img>
-                <img className="uploadPosterr" src="https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_960_720.jpg"></img>
+                <img className="uploadPoster" alt="Loading Failed" src="https://cdn.pixabay.com/photo/2017/01/31/17/08/arms-2025624_960_720.png"></img>
+                <img className="uploadPosterr" alt="Loading Failed" src="https://cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_960_720.jpg"></img>
             </div>
         </div>)
     )
