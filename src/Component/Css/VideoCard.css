@@ -190,31 +190,110 @@ video{
     margin-left: 5rem;
 }
 @media(max-width: 360px){
+    
     .video-card{
         width: 100%;
     }
-    .video{
+    video{
         height: 85%;
         width: 95%;
+        margin-top: 4rem;
         margin-left: 2.5%;
         border-radius: 28px;
     }
     .like{
         color: red;
-    right: 2rem;
-    bottom: 16rem;
+    left: 18rem;
+    bottom: 12rem;
     font-size: 2.5rem;
     }
     .comment{
         color: #fff;
-        right: 2rem;
-        bottom: 10rem;
+        left: 18rem;
+        bottom: 8rem;
         font-size: 2.5rem;
+    }
+    .description, .music, .name {
+        width: 14rem;
+        font-weight: 700;
+        color: #fff;
     }
     .share{
         right: 2.5rem;
     color: #fff;
-    bottom: 6rem;
+    bottom: 4rem;
     font-size: 2.3rem;
     }
+    .description{
+        width: 14rem;
+        height: 3rem;
+        bottom: 2rem;
+        font-size: 15px;
+    }
+    .music{
+    bottom: 6rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 13rem;
+    }
+    .name{
+        bottom: 8.5rem;
+        height: 2rem;
+    }
+    .animate{
+        animation: zoomOut 2s ease-out ;
+    }
+    @keyframes zoomOut{
+        0%{
+            font-size: 2.2rem;
+        }
+        20%{
+            bottom: 15rem;
+            right: 5rem;
+            font-size: 2.5rem;
+        }
+        50%{
+            bottom: 25rem;
+            right: 8rem;
+            font-size: 3rem;
+        }
+        100%{
+            bottom: 25rem;
+            right: 8rem;
+            font-size: 4rem;
+        }
+    
+    }
+    .commentBOX{
+        height: 85%;
+        width: 95%;
+        margin-top: 4rem;
+        margin-left: 2.5%;
+        border-radius: 28px;
+    }
+    .backBtn{
+        right: 1.5rem;
+        top: 5.5rem;
+    }
+    .allCommentSection{
+        height: 29.3rem;
+        top: 6.2rem;
+    }
+    .newcommentBox{
+    width: 93%;
+    bottom: 2rem;
+    }
+    .sendbtn{
+        margin-left: 1rem;
+    }
+    .newComment{
+        width: 80%;
+    }
+    .number_likes{
+    left: 18.6rem;
+    top: 21.2rem;
+    font-size: 2.5rem;
+    color: yellow;
+    }
+    
 }

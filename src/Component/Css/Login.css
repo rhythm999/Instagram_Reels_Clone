@@ -182,6 +182,20 @@
         left: 3.5rem;
     }
     
+
+    .upload_btn,.logout_btn,.Avatar,.AvatarChange,.greenDot,.personal_cont{
+        display: none;
+    }
+    .detailContainer{
+        height: 12%;
+    width: 100%;
+    }
+    .logo{
+        height: 5rem;
+        top: 1rem;
+        font-size: 2rem;
+    }
+    
 }
 
 

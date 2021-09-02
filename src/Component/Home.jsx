@@ -56,8 +56,8 @@ let Home = () => {
                                                 <img alt="Loading Failed" src={value.photoURL} className="Avatar"></img>
 
                                 }
-                                <div className="logo">SPOOL</div>
                             </div>
+                            <div className="logo">SPOOL</div>
                             <div className="profile_btn"></div>
                             <span class="material-icons logout_btn" onClick={() => {
                                 auth.signOut();
