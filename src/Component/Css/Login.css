@@ -1,5 +1,4 @@
 
-
 .LoginBox{
     background-color: white;
     height: 22rem;
@@ -40,6 +39,7 @@
     left: 9.5rem;
     color: #9AECDB;
     text-shadow: 5px 15px white;
+    text-decoration: underline;
 }
 
 .google_Login{
@@ -153,5 +153,33 @@
     left: 2rem;
 }
 
+@media(max-width: 360px){
+    .img1,.img2{
+        display: none;
+    }
+    .Appname{
+        width: 86vw;
+        font-size: 3rem;
+        left: 1.5rem;
+        text-shadow: 5px 1px #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+    }
+    form{
+        width: 16rem;
+    }
+    .LoginBox{
+        height: 25rem;
+        width: 18rem;
+        padding: 1rem;
+    }
+    .google_Login{
+        height: 2.4rem;
+        top: 27.2rem;
+        left: 3.5rem;
+    }
+}
 
 
