@@ -189,7 +189,7 @@ video{
     margin-top: 1rem;
     margin-left: 5rem;
 }
-@media(max-width: 360px){
+@media(max-width: 900px){
     
     .video-card{
         width: 100%;
