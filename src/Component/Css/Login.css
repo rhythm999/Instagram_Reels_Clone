@@ -154,12 +154,13 @@
 }
 
 @media(max-width: 360px){
-    .img1,.img2{
+    .img1,.img2,.posterLogin,.poster{
         display: none;
     }
     .Appname{
         width: 86vw;
         font-size: 3rem;
+        top: 0rem;
         left: 1.5rem;
         text-shadow: 5px 1px #fff;
         display: flex;
@@ -180,6 +181,7 @@
         top: 27.2rem;
         left: 3.5rem;
     }
+    
 }
 
 
