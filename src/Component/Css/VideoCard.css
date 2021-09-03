@@ -39,6 +39,7 @@
     display: flex;
 }
 video{
+    
     height: 50%;
     width: 100%;
     object-fit: cover;
@@ -189,15 +190,95 @@ video{
     margin-top: 1rem;
     margin-left: 5rem;
 }
-@media(max-width: 900px){
+
+@media(max-width: 1440px){
+    .animate{
+        animation: zoomOut 2s  ;
+    }
+    @keyframes zoomOut{
+        0%{
+            font-size: 3.2rem;
+        }
+        20%{
+            bottom: 35rem;
+            right: 10rem;
+            font-size: 5rem;
+            opacity: 0.8;
+        }
+        50%{
+            bottom: 45rem ;
+            right: 12rem;
+            font-size: 6rem;
+            opacity:0.6;
+        }
+        100%{
+            bottom: 45rem;
+            right: 15rem;
+            font-size: 10rem;
+            opacity:0.4;
+        }
+    
+    }
+    .backBtn {
+        top: 12.5rem;
+        right: 1.5rem;
+    }
+    .allCommentSection {
+        height: 21rem;
+        width: 100%;
+        position: absolute;
+        top: 13.2rem;
+        border-radius: 2rem;
+        overflow: scroll;
+    }
+    .newcommentBox{
+        bottom: 13rem;
+    }
+   
+}
+
+@media(max-width: 1024px){
+    video {
+        height: 50%;
+        width: 100%;
+    }
+    .profile_tag {
+        left: 20rem;
+    }
+    .share {
+        right: 2rem;
+    }
+    .video-card {
+        width: 55%;
+        margin-left: 17rem;
+    }
+    
+}
+
+@media(max-width:777px){
+    .video-card {
+        height: 100%;
+        width: 72%;
+        scroll-snap-align: start;
+        position: relative;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        margin-left: 12rem;
+    }
+    
+    
+}
+
+/* @media(max-width: 500px){
     
     .video-card{
         width: 100%;
     }
     video{
-        height: 85%;
-        width: 95%;
-        margin-top: 4rem;
+        height: 80%;
+        width: 90%;
+        margin-top: 2rem;
         margin-left: 2.5%;
         border-radius: 28px;
     }
@@ -296,4 +377,4 @@ video{
     color: yellow;
     }
     
-}
+}  */

@@ -23,6 +23,39 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 3;
     }
+
+    @media(max-width: 1440px){
+        .profile_tag{
+            left: 26rem;
+        }
+    }
+    @media(max-width: 1024px){
+        .profile_tag {
+            left: 19rem;
+            width: 33rem;
+        }
+        .poster {
+            height: 11rem;
+            width: 31rem;
+            background-color: #00a8ff;
+            position: absolute;
+            top: 22rem;
+            right: -9rem;
+        }
+        
+    }
+    @media(max-width: 777px){
+        .profile_tag {
+            left: 13rem;
+        }
+    }
+
+    /* @media(max-width: 500px){
+        .profile_tag{
+            display: none;
+        }
+    } */
 
 

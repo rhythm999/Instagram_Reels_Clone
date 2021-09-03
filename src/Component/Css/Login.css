@@ -153,8 +153,134 @@
     left: 2rem;
 }
 
-@media(max-width: 900px){
+@media(max-width: 1440px){
+    .logo{
+        height: 5rem;
+    width: 11rem;
+
+    }
+    .Appname {
+        height: 12rem;
+        width: 64vw;
+        font-weight: bold;
+        font-size: 8rem;
+        position: fixed;
+        top: 0rem;
+        left: 15.5rem;
+        color: #9AECDB;
+        text-shadow: 5px 15px white;
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .google_Login{
+        top: 30.2rem;
+        left: 40rem;
+    }
+    .posterLogin{
+        height: 9rem;
+        width: 66rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 12rem;
+    }
+    .greenDot{
+        top: 12rem;
+    }
+    .personal_cont{
+        top: 11.67rem;
+    }
+    .AvatarChange{
+        top: 31rem;
+    }
+    .name{
+        height: 3rem !important ;
+        bottom: 15rem !important;
+    }
+    .like, .comment, .share {
+        bottom: 13rem !important;
+    }
+    .poster {
+        height: 14rem;
+        width: 32rem;
+        background-color: #00a8ff;
+        position: absolute;
+        top: 19rem;
+        right: -4rem;
+    }
+    
+    
+    .description {
+        bottom: 14rem;
+        height: 4rem !important;
+    }
+    .number_likes {
+        top: 33.2rem !important;
+        color: wheat !important;
+    }
+
+}
+
+@media(max-width: 1024px){
+    .Appname{
+        left: 10.5rem;
+        font-size: 6rem;
+        text-shadow: 5px 4px white;
+    }
+    .posterLogin {
+        height: 9rem;
+        width: 41rem;
+    }
+    .google_Login {
+        top: 31.5rem;
+        left: 29.5rem;
+    }
+    
+    
+}
+
+@media(max-width:777px){
+    .detailContainer{
+        width: 10rem;
+    }
+    .AvatarChange{
+        left: 0.5rem;
+    }
+    .upload_btn{
+        left: 3rem;
+    }
+    .logout_btn{
+        left:3.3rem;
+    }
+    .Avatar {
+        height: 9rem;
+        width: 9rem;
+    }
+    .logo {
+        height: 5rem;
+        width: 9rem;
+        left: 0.8rem;
+        font-size: 2.5rem;
+    }
+    .greenDot{
+        left: 0.5rem;
+    }
+    .personal_cont{
+        left: 2rem;
+    }
+    .poster{
+        display: none;
+    }
+    
+}
+
+
+/* @media(max-width: 500px){
     .img1,.img2,.posterLogin,.poster{
+        display: none;
+    }
+    .upload_btn,.logout_btn,.Avatar,.AvatarChange,.greenDot,.personal_cont{
         display: none;
     }
     .Appname{
@@ -183,9 +309,6 @@
     }
     
 
-    .upload_btn,.logout_btn,.Avatar,.AvatarChange,.greenDot,.personal_cont{
-        display: none;
-    }
     .detailContainer{
         height: 12%;
     width: 100%;
@@ -196,6 +319,4 @@
         font-size: 2rem;
     }
     
-}
-
-
+} */

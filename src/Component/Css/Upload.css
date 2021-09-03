@@ -33,3 +33,34 @@
     right: 88rem;
 
 }
+
+
+
+@media (max-width : 1440px){
+    .uploadPosterr {
+        height: 29rem;
+    width: 22rem;
+    position: absolute;
+    top: 12rem;
+    right: 66rem;
+    }
+    .uploadPoster {
+        height: 29rem;
+        width: 23rem;
+        position: absolute;
+        top: 13rem;
+        left: 64rem;
+    }
+}
+
+@media (max-width : 1024px){
+    .uploadPosterr,.uploadPoster {
+        display: none;
+    }
+}
+
+@media(max-width:777px){
+    .upload_modal {
+        width: 72vw;
+    }
+}
