@@ -1,11 +1,11 @@
 
 .LoginBox{
-    background-color: white;
+    background-color: lightblue;
     height: 22rem;
     width: 42rem;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 17px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+    box-shadow: -8px 6px 11px 5px lightcoral;
 }
 .btn{
     margin-left: 1rem;
@@ -13,7 +13,7 @@
 .row{
     height: 100vh;
     width: 100vw;
-    background-color: #00a8ff;
+    background-color: #34495e;
     opacity: 1;
 
 }
@@ -30,15 +30,15 @@
     height: 24rem;
 }
 .Appname{
-    height: 8rem;
-    width: 103vw;
+    height: 20rem;
+    width: 65vw;
     font-weight: bold;
-    font-size: 16rem;
+    font-size: 12rem;
     position: fixed;
-    top: -5rem;
-    left: 9.5rem;
-    color: #9AECDB;
-    text-shadow: 5px 15px white;
+    top: -1rem;
+    left: 21.5rem;
+    color: white;
+    text-shadow: 5px 10px lightgrey;
     text-decoration: underline;
 }
 
@@ -69,7 +69,7 @@
     border: 1px solid;
     height: 100%;
     width: 13rem;
-    background-color: #353b48;
+    box-shadow: 8px 4px 14px 4px lightcoral;
 }
 .profile_btn{
     height: 10rem;
@@ -82,7 +82,7 @@
     position: absolute;
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
-    background-color: #00a8ff;
+    background-color: #34495e;
 }
 
 .greenDot{
@@ -115,7 +115,7 @@
 .poster{
     height: 14rem;
     width: 52rem;
-    background-color: #00a8ff;
+    background-color: #34495e;
     position: absolute;
     top: 22rem;
     right: -9rem;
@@ -162,21 +162,16 @@
     .Appname {
         height: 12rem;
         width: 64vw;
-        font-weight: bold;
         font-size: 8rem;
-        position: fixed;
         top: 0rem;
         left: 15.5rem;
-        color: #9AECDB;
-        text-shadow: 5px 15px white;
-        text-decoration: underline;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .google_Login{
-        top: 30.2rem;
-        left: 40rem;
+    .google_Login {
+        top: 33.5rem;
+        left: 39rem;
     }
     .posterLogin{
         height: 9rem;
@@ -192,33 +187,20 @@
         top: 11.67rem;
     }
     .AvatarChange{
-        top: 31rem;
+        top: 38rem;
     }
-    .name{
-        height: 3rem !important ;
-        bottom: 15rem !important;
-    }
-    .like, .comment, .share {
-        bottom: 13rem !important;
-    }
+    
+    
     .poster {
         height: 14rem;
         width: 32rem;
-        background-color: #00a8ff;
+        background-color: #34495e;
         position: absolute;
         top: 19rem;
         right: -4rem;
     }
+   
     
-    
-    .description {
-        bottom: 14rem;
-        height: 4rem !important;
-    }
-    .number_likes {
-        top: 33.2rem !important;
-        color: wheat !important;
-    }
 
 }
 
@@ -226,14 +208,14 @@
     .Appname{
         left: 10.5rem;
         font-size: 6rem;
-        text-shadow: 5px 4px white;
+        text-shadow: 5px 4px lightgrey;
     }
     .posterLogin {
         height: 9rem;
         width: 41rem;
     }
     .google_Login {
-        top: 31.5rem;
+        top: 34.7rem;
         left: 29.5rem;
     }
     
@@ -241,6 +223,35 @@
 }
 
 @media(max-width:777px){
+    .row{
+        margin: auto;
+    }
+    .col-4{
+        width: 10rem;
+    }
+    .google_Login {
+        top: 33.5rem;
+        left: 19.5rem;
+    }
+    .main{
+        width: 30rem;
+    align-items: end;
+    }
+    .Appname{ 
+        width: 38rem;
+        height: 7rem;
+        top: 3rem;
+        left: 4rem;
+    }
+    .img1,.img2{
+        display: none;
+    }
+    .posterLogin{
+        left: 3rem;
+    }
+    .LoginBox{
+        width: 30rem;
+    }
     .detailContainer{
         width: 10rem;
     }
@@ -272,51 +283,25 @@
     .poster{
         display: none;
     }
-    
 }
 
-
-/* @media(max-width: 500px){
-    .img1,.img2,.posterLogin,.poster{
-        display: none;
-    }
-    .upload_btn,.logout_btn,.Avatar,.AvatarChange,.greenDot,.personal_cont{
+@media(max-width:485px){
+    .img1,.img2,.posterLogin{
         display: none;
     }
     .Appname{
-        width: 86vw;
+        left: 3.3rem;
         font-size: 3rem;
-        top: 0rem;
-        left: 1.5rem;
-        text-shadow: 5px 1px #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: underline;
-    }
-    form{
-        width: 16rem;
-    }
-    .LoginBox{
-        height: 25rem;
-        width: 18rem;
-        padding: 1rem;
+        width: 19rem;
+        height: 4rem;
+        text-shadow: 1px 4px lightgrey;
+        top: 11rem;
     }
     .google_Login{
-        height: 2.4rem;
-        top: 27.2rem;
-        left: 3.5rem;
+        left: 9.9rem;
+    top: 33rem;
     }
-    
-
-    .detailContainer{
-        height: 12%;
-    width: 100%;
+    .detailContainer,.logout_btn,.upload_btn{
+        display: none;
     }
-    .logo{
-        height: 5rem;
-        top: 1rem;
-        font-size: 2rem;
-    }
-    
-} */
+}

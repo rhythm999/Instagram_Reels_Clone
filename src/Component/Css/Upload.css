@@ -1,7 +1,7 @@
 .upload_container{
     height: 100vh;
     width: 100vw;
-    background-color: #00a8ff;
+    background-color: #34495e;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -11,9 +11,9 @@
 .upload_modal{
     height: 40vh;
     width: 40vw;
-    background-color: white;
+    background-color: lightblue;
     border-radius: 3rem;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 17px 8px, rgba(0, 0, 0, 0.3) 0px 14px 26px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+    box-shadow: 7px 5px 11px 4px lightcoral;
 }
 
 .uploadPoster{
